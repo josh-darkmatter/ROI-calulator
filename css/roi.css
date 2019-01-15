@@ -1,0 +1,209 @@
+/*********** ROI Calculator ************/
+.roi-wrapper {
+  max-width: 1200px;
+  margin: 60px auto 50px;
+  padding: 0 15px;
+}
+#revenue-chart, #revenue-chart-ver, #knowledge-chart, #knowledge-chart-vert, #revenue-chart-top, #revenue-chart-stacked {
+min-height: 700px;
+margin-left: 0;
+}
+#revenue-chart-stacked-wrapper {
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+#revenue-chart, #revenue-chart-ver, #knowledge-chart, #knowledge-chart-vert, #revenue-chart-top, #revenue-chart-stacked {
+min-height: 700px;
+margin-left: 0;
+padding-left: 0px;
+}
+}
+#revenue-chart, #revenue-chart-top, #revenue-chart-svg, #revenue-chart-vert, #revenue-chart-vert-top, #revenue-chart-vert-svg, #knowledge-chart, #knowledge-chart-top, #knowledge-chart-svg, #knowledge-chart-vert, #knowledge-chart-vert-top, #knowledge-chart-vert-svg, #revenue-chart-stacked, #revenue-chart-stacked-top {
+  overflow: visible !important;
+}
+#revenue-chart-text, #revenue-chart-vert-text, #knowledge-chart-text, #knowledge-chart-vert-text {
+  stroke: #000;
+  stroke-width: 0.1;
+}
+
+.roi-wrapper form label {
+font-size: 15px;
+color: #222;
+}
+
+.roi-wrapper form {
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+select, input[type="text"], input[type="number"] {
+  -webkit-box-shadow: none !important;
+background: #f7f7f7;
+  border-color: #e9e9e9 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  padding: 14px 15px !important;
+  height: 50px;
+}
+select {
+background: url(../images/dropdown.png) no-repeat 97% center #f7f7f7;
+}
+#results {
+clear: both;
+margin: 0 auto;
+max-width: 1300px;
+}
+#results h3 {
+  font-family: 'GothamRoundedLight' !important;
+  font-weight: normal;
+  font-size: 30px;
+  color: #000;
+  margin-top: 30px;
+  float: left;
+}
+#results ul {
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+#results ul li {
+  float: left;
+  width: 25%;
+  margin: 0;
+  height: 64px;
+  list-style: none;
+  display: block;
+  font-size: 15px;
+  line-height: 17px;
+  color: #000;
+  position: relative;
+  padding: 15px 15px;
+}
+#results ul li:before {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  content: "";
+  background: #ddd;
+  right: 0;
+  top: 0;
+}
+
+#results ul li.four:before, #results ul li.eight:before {
+display: none;
+}
+#results ul li.one:after, #results ul li.two:after, #results ul li.three:after, #results ul li.four:after {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  content: "";
+  background: #ddd;
+  left: 0;
+  bottom: 0;
+}
+#results ul li span {
+color: #7e0440 !important;
+display: block;
+}
+#results ul p {
+  color: #000;
+  clear: both;
+  margin-top: 25px;
+  float: left;
+  margin-left: 15px;
+}
+#results ul p span {
+color: #7e0440 !important;
+margin-left:5px;
+}
+
+#revenue-chart, #knowledge-chart-vert, #revenue-chart-stacked {
+  clear: both;
+}
+.results-holder .left-column, .results-holder .right-column {
+  width: 50%;
+  float: left;
+}
+.results-holder .left-column {
+  padding: 70px 40px;
+}
+.results-holder .left-column h3, .results-holder .left-column p.black {
+  display: block;
+  text-align: center !important; 
+  float: none !important;
+}
+.results-holder .left-column h3 {
+  margin-top: 12px !important;
+}
+.results-holder h3.grey {
+  color: #aeaeae !important;
+}
+.results-holder .black {
+  color: #000;
+}
+button {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: #fff;
+  font-family: 'GothamRoundedBook'!important;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: #ab275c;
+  padding: 12px;
+  max-width: 200px;
+  display: block;
+  min-width: 200px;
+  background: #87be40;
+  border-color: #87be40 !important;
+}
+  
+button:hover {
+   background: #6ea625;
+  border-color: #6ea625 !important;
+}
+  
+#revenue-chart-license-text {
+  display: none;
+}
+.form-row {
+  float: left;
+  width: 100%;
+  margin: 0 0 0 -10px;
+  padding: 0;
+}
+.form-button {
+clear: both;
+float: left;
+margin: 4% auto 0;
+}
+@media only screen and (max-width: 768px) {
+.results-holder .left-column, .results-holder .right-column {
+  width: 100%;
+  float: none;
+}  
+}
+
+@media only screen and (min-width: 680px) {
+.roi-wrapper form label {
+  float: left;
+  width: 30%;
+  padding: 19px 0 0;
+ }
+ 
+select, input[type="text"], input[type="number"] {
+  width: 68%;
+  min-width: 68%;
+}
+button {
+margin: 0 auto;
+}
+.form-button {
+margin: 4% 0 0 29%;
+}
+}
+
+/*********** END ROI Calculator ************/
+
