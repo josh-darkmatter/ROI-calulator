@@ -237,13 +237,9 @@ var n = this,
       <option value="saab">No</option>
 </select></div>
   <div class="form-row"><label for="members">Number of Members</label><input type="number" id="members" value="35000" /></div>
-  <div class="form-row"><label for="attendees">Number of Attendees</label><input type="number" id="attendees" value="8800" /></div>
+  <div class="form-row"><label for="attendees">Number of Attendees</label><input type="number" id="attendees" value="880" /></div>
   <div class="form-row"><label for="hours">Number of Hours</label><input type="number" id="hours" value="100" /></div>
-  <div class="form-row"><label for="Capture">Offer professional continuing educational credits?</label>
-    <select name="cars">
-      <option value="volvo">Yes</option>
-      <option value="saab">No</option>
-</select></div>  
+
   <div class="form-button"><button id="calculate-button" onclick="javascript:generate(); return false;" type="button">Calculate</button></div>
 </form>
 
