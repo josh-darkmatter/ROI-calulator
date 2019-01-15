@@ -232,9 +232,9 @@ var n = this,
 
 <form>
   <div class="form-row"><label for="Capture">Do you Capture Meetings?</label>
-    <select name="cars">
-      <option value="volvo">Yes</option>
-      <option value="saab">No</option>
+    <select name="meetings">
+      <option value="meet-yes">Yes</option>
+      <option value="meet-no">No</option>
 </select></div>
   <div class="form-row"><label for="members">Number of Members</label><input type="number" id="members" value="35000" /></div>
   <div class="form-row"><label for="attendees">Number of Attendees</label><input type="number" id="attendees" value="880" /></div>
